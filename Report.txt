@@ -1,0 +1,19 @@
+Types of Report 
+There are three types of report in Frappe/ERP
+1. Report Builder
+2. Query Report
+3. Script Report
+
+1. Report Builder:
+	-> Set Report Type to Report Builder
+	-> Set Ref DocType, Report Name
+	-> Set Is Standard to Yes if you want code for this 
+	-> Save this report and then go to show report
+	-> Click on Grouped By and do whatever you want to do
+	 
+2. Query Report:
+	-> Set Report Type to Query Report
+	-> Set Ref DocType, Report Name
+	-> Set Is Standard to Yes if you want code for this
+	-> Scroll down and go to Query Section and write database query for whatever you want in report
+	-> Query Example:- SELECT * FROM `tabVehicle`
