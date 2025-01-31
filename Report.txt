@@ -17,3 +17,16 @@ There are three types of report in Frappe/ERP
 	-> Set Is Standard to Yes if you want code for this
 	-> Scroll down and go to Query Section and write database query for whatever you want in report
 	-> Query Example:- SELECT * FROM `tabVehicle`
+
+	Filter Method:
+	  -> Go to filter and add row 
+	  -> First write label then in fieldtype select option like Select,Check,Link
+	  -> then write Fieldname this is the field that you write in query like type
+	  -> Then write options in options field like Petrol Diesel Natural Gas Electric
+	  -> Scroll down and go to Query Section and write database query
+	  -> Example
+		SELECT make, fuel_type , count(*) AS Count
+		FROM `tabVehicle`
+		WHERE fuel_type = %(type)s
+		GROUP BY make
+	  -> this is syntax for applying filter %(type)s
